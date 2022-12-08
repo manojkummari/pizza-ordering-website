@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #F2F2F2;
+}
+
+.bar {
+  background-color: #F22B0C;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.bar ul li {
+  padding: 10px 20px;
+  position: relative;
+}
+
+.bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.bar ul li a:hover {
+  color: salmon;
+}
+
+.drop {
+  display: none;
+}
+
+.bar ul li:hover .drop {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 270px;
+  background-color: #F22B0C;
+}
+
+.bar ul li:hover .drop ul {
+  display: block;
+  margin: 10px;
+}
+
+.drop ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.drop-1 {
+  display: none;
+}
+
+.drop ul li:hover .drop-1 {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 260px;
+  background-color: #F22B0C;
+}
+
+.mra {
+  padding: 70px 0px 70px 20px;
+  float: left;
+  width: 480px;
+  font-size: 20px;
+}
+
+.mraimg {
+  width: 160px;
+  height: 170px;
+  border-radius: 25px;
+}
+
+.main {
+  padding: 20px 0px 20px 80px;
+  float: left;
+}
+
+.main1 {
+  padding: 20px 0 20px 70px;
+  float: left;
+}
+
+.side {
+  padding: 20px 0px 20px 80px;
+  float: left;
+}
+
+.side1 {
+  padding: 20px 0 20px 70px;
+  float: left;
+}
+a img:hover{
+  transform: scale(0.99);
+}
+
+@media only screen and (max-width: 940px) {
+  .side {
+    float: left;
+    padding: 20px;
+    width:50%;
+  }
+
+  .side1 {
+    float: left;
+    padding: 20px;
+    width:50%;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .main1 {
+    padding: 20px;
+    float: left;
+  }
+}
+
+.but {
+  height: 40px;
+  width: 120px;
+  font-size: 25px;
+  color: white;
+  border-radius: 25px;
+  background: red;
+  border-color: red;
+}
+
+.crimg {
+  float: left;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-size: 20px;
+}
+
+.crimg2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 940px) {
+  .crimg2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: grey;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: gold;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: gold;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: gold;
+}
+
+.gallery {
+  height: 300px;
+  width: 450px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.offers1 {
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+
+.offers2 {
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+
+.offers3 {
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+
+.offers4 {
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+
+.reserve {
+  width: 100%;
+  height: 600px;
+}
+
+.reserve1 {
+  width: 533px;
+  height: 600px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .reserve1 {
+    width: 100%;
+  }
+}
+
+.menu {
+  padding: 20px 0 20px 20px;
+  width: 470px;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    width: 750px
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menu {
+    width: 470px;
+  }
+}
+
+.menu1 {
+  width: 80px;
+  height: 80px;
+}
+
+.menu2 {
+  padding: 3% 10px 3% 150px;
+}
+
+.menu3 {
+  padding: 20px 30px;
+  color: darkcyan;
+}
+
+.menu4 {
+  border-radius: 50px;
+}
+
+.menu5 {
+  background-image: url(menuback.png);
+  border-radius: 50px;
+}
+
+.gallery {
+  height: 300px;
+  width: 450px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.gallery1 {
+  width: 430px;
+  height: 350px;
+  border-radius: 20px;
+}
